@@ -1,0 +1,11 @@
+dbt_poc:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: nifty-linker-471318-a6
+      dataset: Bronze
+      threads: 4 # Must be a value of 1 or greater
+      keyfile: credentials/nifty-linker-471318-a6-ab7e44fa43d5.json
+      OPTIONAL_CONFIG: VALUE
