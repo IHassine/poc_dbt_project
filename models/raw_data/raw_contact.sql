@@ -8,16 +8,8 @@
 */
 
 {{ config(schema='raw_data') }}
-with source_data as (
-
-    select 1 as id
-    union all
-    select null as id
-
-)
-
 select *
-from source_data
+from nifty-linker-471318-a6.Bronze.Contact
 
 /*
     Uncomment the line below to remove records with null `id` values
