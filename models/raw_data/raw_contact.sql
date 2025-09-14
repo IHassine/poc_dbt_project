@@ -11,6 +11,7 @@
 select *
 from nifty-linker-471318-a6.Bronze.Contact
 
+
 /*
     Uncomment the line below to remove records with null `id` values
 */
