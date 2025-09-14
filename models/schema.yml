@@ -2,19 +2,19 @@
 version: 2
 
 models:
-  - name: my_first_dbt_model
-    description: "A starter dbt model"
+  - name: raw_contact
+    description: "my sample of contact data"
     columns:
-      - name: id
+      - name: ID_PERS
         description: "The primary key for this table"
         data_tests:
           - unique
 
 
-  - name: my_second_dbt_model
-    description: "A starter dbt model"
+  - name: raw_contract
+    description: "my sample of contract data "
     columns:
-      - name: id
+      - name: ID_CONT
         description: "The primary key for this table"
         data_tests:
           - unique
