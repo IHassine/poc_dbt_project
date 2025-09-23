@@ -10,7 +10,7 @@
 {{ config(schema='raw_data') }}
 select *
 from nifty-linker-471318-a6.Bronze.Contact
-
+where ID_CRM IS NOT NULL
 
 /*
     Uncomment the line below to remove records with null `id` values
