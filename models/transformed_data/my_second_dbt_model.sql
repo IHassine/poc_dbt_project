@@ -1,6 +1,6 @@
 
 -- Use the `ref` function to select from other models
-{{ config(schema='transformed_data') }}
+{{ config(schema='transformed_data'}}
 select CNTC.ID_PERS, 
        CNTC.LB_NOM,
        SUM(CONT.VA_CONT) AS VA_SUM_CONT
